@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranzato Servizi | Siti Premium per Attività Locali</title>
+    <meta name="description" content="Aiutiamo le attività locali a trovare nuovi clienti con siti web moderni, veloci e dal design premium. Richiedi un mockup gratuito.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Ranzato<span>Servizi</span></a>
+            <ul class="nav-links">
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#portfolio">Lavori</a></li>
+                <li><a href="#processo">Metodo</a></li>
+            </ul>
+            <a href="#contatti" class="btn btn-primary nav-btn">Inizia Ora</a>
+            <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <h1 class="reveal">Siti Web Premium per <span class="text-gradient">Attività Locali</span></h1>
+            <p class="hero-subtitle reveal delay-1">Smetti di perdere clienti a causa di un sito lento o inesistente. Progettiamo esperienze digitali che trasformano i visitatori in clienti paganti.</p>
+            <div class="hero-cta reveal delay-2">
+                <a href="#contatti" class="btn btn-primary btn-large">Richiedi un Mockup Gratuito</a>
+                <a href="#portfolio" class="btn btn-secondary btn-large">Guarda i Lavori</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servizi" class="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Cosa Posso Fare per Te</h2>
+                <p class="section-subtitle">Soluzioni digitali senza compromessi, pensate per il mercato locale.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">💻</div>
+                    <h3>Siti Vetrina Premium</h3>
+                    <p>Design moderno, caricamento istantaneo e ottimizzazione perfetta per smartphone. Il tuo nuovo biglietto da visita digitale.</p>
+                </div>
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">🔄</div>
+                    <h3>Restyling Completo</h3>
+                    <p>Il tuo sito è fermo al 2010? Lo riprogettiamo da zero mantenendo i tuoi contenuti, ma dandogli un look mozzafiato.</p>
+                </div>
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">🚀</div>
+                    <h3>SEO Locale</h3>
+                    <p>Ottimizziamo il sito per farti trovare su Google da chi cerca i tuoi servizi nella tua città o quartiere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Casi Studio & Concept</h2>
+                <p class="section-subtitle">Progetti reali e demo progettati per massimizzare le conversioni.</p>
+            </div>
+
+            <!-- Filtri Portfolio -->
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">Tutti i Progetti</button>
+                <button class="filter-btn" data-filter="food">Food & Beverage</button>
+                <button class="filter-btn" data-filter="wellness">Wellness & Beauty</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- COMPLETED: Food -->
+                <a href="../smash-burgers/index.html" target="_blank" class="portfolio-card reveal item" data-category="food">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #ff4b2b, #ff416c);">
+                            <span class="category-badge">🍔 Fast Food</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Smash Burgers: Esperienza Premium</h3>
+                        <p>Concept per un'hamburgeria. Layout dinamico, colori audaci e focus su ordini telefonici (Drive-to-Store).</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Wellness (Barber) -->
+                <a href="../barber-shop/index.html" target="_blank" class="portfolio-card reveal delay-1 item" data-category="wellness">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #050505, #00f3ff);">
+                            <span class="category-badge">✂️ Barbiere</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Cut Lab: Urban Barber</h3>
+                        <p>Design iper-moderno monocromatico, con layout in vetro (Glassmorphism) e prenotazioni integrate.</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Wellness (Gym) -->
+                <a href="../iron-gym/index.html" target="_blank" class="portfolio-card reveal delay-2 item" data-category="wellness">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #09090b, #39ff14);">
+                            <span class="category-badge">💪 Fitness</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Iron Gym (Demo)</h3>
+                        <p>Design estremo, asimmetrico e iper-moderno, focalizzato interamente sulla Lead Generation (Prova Gratuita).</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Food (Pizzeria) -->
+                <a href="../pizzeria/index.html" target="_blank" class="portfolio-card reveal item" data-category="food">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #8B0000, #FF8C00);">
+                            <span class="category-badge">🍕 Pizzeria</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>La Pizzeria Verace</h3>
+                        <p>Stile rustico e caldo. Ottimizzato per presentare il menu e facilitare le prenotazioni dei tavoli (Drive-to-Store).</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Food (Pasticceria) -->
+                <a href="../pasticceria/index.html" target="_blank" class="portfolio-card reveal item" data-category="food">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #ff9a9e, #fecfef);">
+                            <span class="category-badge">🧁 Pasticceria</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Pasticceria Elegance</h3>
+                        <p>Layout luminoso, colori pastello e design elegante per esaltare torte personalizzate e dolci artigianali.</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Food (Gelateria) -->
+                <a href="../gelateria/index.html" target="_blank" class="portfolio-card reveal item" data-category="food">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #a1e2d4, #fff07c);">
+                            <span class="category-badge">🍦 Gelateria</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Gelateria Puro Freddo</h3>
+                        <p>Design estivo e giocoso. Separatori ondulati, colori pop (Menta e Limone) e mappa gigante per favorire le visite in negozio.</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Wellness (Spa) -->
+                <a href="../spa-beauty/index.html" target="_blank" class="portfolio-card reveal item" data-category="wellness">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #a8e063, #56ab2f);">
+                            <span class="category-badge">🌿 Centro Estetico</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Zen Spa & Beauty</h3>
+                        <p>Design rilassante e molto arioso, colori neutri (Salvia e Sabbia). Focus sui percorsi benessere e prenotazioni facili via WhatsApp.</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+                <!-- COMPLETED: Wellness (Hair Salon) -->
+                <a href="../hair-salon/index.html" target="_blank" class="portfolio-card reveal item" data-category="wellness">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-img-placeholder" style="background: linear-gradient(135deg, #0a0a0a, #f2e6e1);">
+                            <span class="category-badge">✂️ Parrucchiere Donna</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aura Hair Stylist</h3>
+                        <p>Stile editoriale "Haute Couture". Immagini d'impatto a tutto schermo, lookbook integrato e layout asimmetrico per un'esperienza premium.</p>
+                        <div class="portfolio-action">Esplora il progetto <span class="arrow">&rarr;</span></div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="processo" class="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Il Metodo</h2>
+                <p class="section-subtitle">Semplice, trasparente e senza sorprese.</p>
+            </div>
+            <div class="process-steps">
+                <div class="step reveal">
+                    <div class="step-number">01</div>
+                    <h3>Analisi & Mockup Gratuito</h3>
+                    <p>Ci prendiamo un caffè, mi parli della tua attività e ti preparo una prima bozza visiva (gratis e senza impegno).</p>
+                </div>
+                <div class="step reveal delay-1">
+                    <div class="step-number">02</div>
+                    <h3>Sviluppo & Revisione</h3>
+                    <p>Se la bozza ti piace, costruisco il sito vero e proprio. Lo perfezioniamo insieme finché non è esattamente come lo vuoi.</p>
+                </div>
+                <div class="step reveal delay-2">
+                    <div class="step-number">03</div>
+                    <h3>Lancio!</h3>
+                    <p>Mettiamo il sito online. Da questo momento la tua attività ha una marcia in più rispetto alla concorrenza locale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatti" class="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-glow"></div>
+                <div class="contact-grid">
+                    <div class="contact-content">
+                        <span class="eyebrow">Iniziamo</span>
+                        <h2 class="section-title">Smettiamo di perdere clienti.</h2>
+                        <p>Lasciami i tuoi contatti. Analizzerò la tua attività e ti preparerò una <strong>prima bozza visiva gratuita</strong> di come potrebbe essere il tuo nuovo sito premium.</p>
+                        <ul class="contact-benefits">
+                            <li><span class="check">✓</span> Nessun costo nascosto</li>
+                            <li><span class="check">✓</span> Design personalizzato</li>
+                            <li><span class="check">✓</span> Risposta in 24 ore</li>
+                        </ul>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="modern-form" id="contactForm" onsubmit="event.preventDefault(); this.innerHTML='<div class=\'success-message\'><h3>🚀 Richiesta inviata!</h3><p>Ti contatterò nelle prossime 24 ore per il tuo mockup.</p></div>';">
+                            <div class="form-floating">
+                                <input type="text" id="name" placeholder=" " required>
+                                <label for="name">Il tuo nome</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" id="contact-info" placeholder=" " required>
+                                <label for="contact-info">Email o Telefono</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" id="business" placeholder=" ">
+                                <label for="business">Nome dell'attività (opzionale)</label>
+                            </div>
+                            <button type="submit" class="btn btn-glow btn-block" id="submitBtn">
+                                <span class="btn-text">Voglio il mio Mockup Gratuito</span>
+                                <span class="btn-icon">✨</span>
+                            </button>
+                            <p class="form-disclaimer">Nessun impegno. Solo una bella chiacchierata.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">Ranzato<span>Servizi</span></div>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Ranzato Servizi. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
