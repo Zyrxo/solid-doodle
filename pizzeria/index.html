@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Pizzeria Verace | Tradizione e Fuoco</title>
+    <meta name="description" content="L'arte della vera pizza. Lievitazione 48h, ingredienti DOP e forno a legna. Prenota il tuo tavolo o ordina da asporto.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Verace<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#storia">La Tradizione</a></li>
+                <li><a href="#menu">Le Pizze</a></li>
+                <li><a href="#prenota">Prenota</a></li>
+            </ul>
+            <a href="tel:+39061234567" class="btn btn-outline nav-btn">Chiama Ora</a>
+            <div class="mobile-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <img src="../.gemini/antigravity/artifacts/pizza_hero.jpg" alt="Pizza in forno a legna" class="hero-bg" onerror="this.src='https://images.unsplash.com/photo-1579751626657-72bc17010498?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'">
+        
+        <div class="container hero-content">
+            <span class="eyebrow reveal">Dal Forno a Legna</span>
+            <h1 class="reveal delay-1">L'Arte della Vera<br><i>Pizza Napoletana</i></h1>
+            <p class="reveal delay-2">Cornicione alveolato, 48 ore di lievitazione, pomodoro San Marzano DOP. Il vero sapore della tradizione.</p>
+            <div class="hero-actions reveal delay-3">
+                <a href="#prenota" class="btn btn-primary btn-large">Prenota un Tavolo</a>
+                <a href="#menu" class="btn btn-text">Guarda il Menu &rarr;</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="storia" class="dough-section">
+        <div class="container dough-container">
+            <div class="dough-text reveal">
+                <h2>Il Segreto è nel <span class="text-accent">Tempo.</span></h2>
+                <p class="lead">Non esistono scorciatoie per l'eccellenza. La nostra pasta riposa per ben 48 ore prima di incontrare il fuoco.</p>
+                <p>Usiamo solo farine macinate a pietra, acqua pura e pochissimo lievito. Il risultato è un impasto leggerissimo come una nuvola, altamente digeribile e con quel profumo inconfondibile di pane appena sfornato che riempie il locale.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>48h</h3>
+                        <span>Lievitazione</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>450°</h3>
+                        <span>Forno a Legna</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>100%</h3>
+                        <span>Ingredienti DOP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dough-img reveal delay-1">
+                <div class="img-frame">
+                    <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Impasto della pizza">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="eyebrow">La Nostra Selezione</span>
+                <h2>Le Classiche e <i>Le Gourmet</i></h2>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Pizza 1 -->
+                <div class="menu-item reveal">
+                    <div class="item-header">
+                        <h3>Regina Margherita</h3>
+                        <span class="price">€8.00</span>
+                    </div>
+                    <p>Pomodoro San Marzano DOP, fior di latte di Agerola, basilico fresco, olio EVO.</p>
+                </div>
+                
+                <!-- Pizza 2 -->
+                <div class="menu-item reveal delay-1">
+                    <div class="item-header">
+                        <h3>La Diavola Sbagliata</h3>
+                        <span class="price">€10.00</span>
+                    </div>
+                    <p>San Marzano, fior di latte, spianata calabra piccante, miele al peperoncino, basilico.</p>
+                </div>
+
+                <!-- Pizza 3 -->
+                <div class="menu-item reveal">
+                    <div class="item-header">
+                        <h3>Pistacchio e Mortadella</h3>
+                        <span class="price">€13.50</span>
+                    </div>
+                    <p>Focaccia bianca, mortadella IGP Bologna, stracciatella pugliese, granella di pistacchio.</p>
+                </div>
+
+                <!-- Pizza 4 -->
+                <div class="menu-item reveal delay-1">
+                    <div class="item-header">
+                        <h3>Marinara Antica</h3>
+                        <span class="price">€7.00</span>
+                    </div>
+                    <p>San Marzano DOP, aglio rosso di Sulmona, origano di Pantelleria, olio EVO abbondante.</p>
+                </div>
+            </div>
+            
+            <div class="menu-action reveal">
+                <a href="#prenota" class="btn btn-outline">Chiama per il Menu Completo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="prenota" class="booking-section">
+        <div class="container booking-container">
+            <div class="booking-card reveal">
+                <div class="booking-content">
+                    <h2>Prenota il tuo <i>Tavolo</i></h2>
+                    <p>La vera pizza non aspetta. Chiamaci ora per prenotare il tuo tavolo nel nostro locale o per ordinare le tue pizze da asporto. Il forno è già caldo.</p>
+                    
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <span class="icon">📞</span>
+                            <div>
+                                <strong>Chiama Ora</strong>
+                                <a href="tel:+39061234567" class="phone-link">+39 06 1234 567</a>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <span class="icon">📍</span>
+                            <div>
+                                <strong>Dove Siamo</strong>
+                                <p>Via del Forno 42, Roma (RM)</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <span class="icon">🕒</span>
+                            <div>
+                                <strong>Orari</strong>
+                                <p>Mar-Dom: 19:00 - 23:30<br>Lunedì: Chiuso</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-wrapper">
+                    <!-- Google Maps Iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246110996!2d12.492230915441484!3d41.89025197922119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1622634882570!5m2!1sit!2sit" width="100%" height="100%" style="border:0; filter: contrast(120%) saturate(80%);" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">Verace<span>.</span></div>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> La Pizzeria Verace. Progettato da Tuo Brand Web Design.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance | Alta Pasticceria Artigianale</title>
+    <meta name="description" content="L'arte della dolcezza. Pasticceria mignon, grandi lievitati e torte su misura per i tuoi eventi speciali.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Elegance<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#creazioni">Creazioni</a></li>
+                <li><a href="#laboratorio">Laboratorio</a></li>
+                <li><a href="#ordina">Ordina una Torta</a></li>
+            </ul>
+            <a href="#ordina" class="btn btn-outline nav-btn">Prenota Ora</a>
+            <div class="mobile-toggle">
+                <span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="eyebrow">Alta Pasticceria</span>
+                <h1>L'Arte della<br>Dolcezza.</h1>
+                <p>Materie prime d'eccellenza, maestria artigiana e design raffinato. Creiamo emozioni da assaporare.</p>
+                <div class="hero-actions">
+                    <a href="#creazioni" class="btn btn-primary">Scopri le Creazioni</a>
+                </div>
+            </div>
+            <div class="hero-image reveal delay-1">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Torta artigianale elegante">
+                <div class="floating-badge">
+                    <span>100%</span>
+                    <span>Artigianale</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="creazioni" class="creations">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Le Nostre Specialità</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="creations-grid">
+                <!-- Mignon -->
+                <article class="creation-card reveal">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pasticceria Mignon">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mignon Contemporanei</h3>
+                        <p>Piccoli gioielli di gusto, perfetti per accompagnare il tè o per un vassoio della domenica.</p>
+                    </div>
+                </article>
+
+                <!-- Torte -->
+                <article class="creation-card reveal delay-1">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Torte su misura">
+                    </div>
+                    <div class="card-content">
+                        <h3>Torte su Misura</h3>
+                        <p>Il centro di ogni celebrazione. Progettiamo e realizziamo torte uniche per matrimoni e compleanni.</p>
+                    </div>
+                </article>
+
+                <!-- Macarons -->
+                <article class="creation-card reveal delay-2">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Macarons">
+                    </div>
+                    <div class="card-content">
+                        <h3>Macarons Parigini</h3>
+                        <p>Gusci friabili alle mandorle con ganache setose e marmellate di frutta fresca.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner reveal">
+        <div class="container banner-container">
+            <div class="banner-content">
+                <h2>Qualità senza compromessi.</h2>
+                <p>Usiamo solo burro francese, vaniglia Bourbon del Madagascar, cioccolato Valrhona e uova da galline ruspanti.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ordina" class="order-section">
+        <div class="container order-container">
+            <div class="order-text reveal">
+                <h2>Prenota la tua Torta.</h2>
+                <div class="divider left"></div>
+                <p>Stai organizzando un evento speciale? Raccontaci la tua idea. La nostra Cake Designer ti contatterà per definire insieme gusti, dimensioni e decorazioni.</p>
+                <div class="contact-info">
+                    <p><strong>Laboratorio:</strong> Via delle Rose 12, Milano</p>
+                    <p><strong>Telefono:</strong> +39 02 9876 543</p>
+                </div>
+            </div>
+            
+            <div class="order-form-wrapper reveal delay-1">
+                <form class="elegant-form" onsubmit="event.preventDefault(); this.innerHTML='<div class=\'success-msg\'><h3>Richiesta Inviata!</h3><p>Ti contatteremo al più presto per definire i dettagli del tuo ordine.</p></div>';">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome e Cognome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Numero di Telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Tipo di Evento</option>
+                            <option value="compleanno">Compleanno</option>
+                            <option value="matrimonio">Matrimonio</option>
+                            <option value="laurea">Festa di Laurea</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Raccontaci la tua idea (gusti preferiti, porzioni...)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Richiedi Preventivo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">Elegance<span>.</span></div>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Pasticceria Elegance. Progettato da Tuo Brand Web Design.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

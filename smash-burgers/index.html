@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate Smash Burger Experience. Burgers cotti a perfezione, patatine croccanti e milkshake artigianali.">
+    <title>Smash King | The Real Smash Experience</title>
+    
+    <!-- Google Fonts: 'Outfit' for modern headings, 'Inter' for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">SMASH <span>KING</span></a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#story" class="nav-link">La Nostra Storia</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#prenota" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+39021234567" class="btn btn-primary nav-cta">Chiama Ora 📞</a>
+            
+            <!-- Mobile Menu Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <h1 class="hero-title">THE REAL <br><span class="text-accent">SMASH</span> EXPERIENCE</h1>
+                    <p class="hero-subtitle">Croccanti fuori, succosi dentro. Preparati con carne 100% bovina di prima scelta e schiacciati alla perfezione sulla piastra rovente.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary btn-large">Scopri il Menu</a>
+                        <a href="#prenota" class="btn btn-secondary btn-large">Prenota un Tavolo</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal fade-right">
+                    <img src="assets/images/hero_burger.png" alt="Il nostro doppio smash burger con formaggio fuso" loading="eager" width="800" height="800">
+                    <div class="badge">
+                        <span>100%</span>
+                        <span>BEEF</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee Text -->
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <span class="marquee-text">Schiacciato alla perfezione • Formaggio fondente • Pane artigianale tostato •</span>
+                <span class="marquee-text">Schiacciato alla perfezione • Formaggio fondente • Pane artigianale tostato •</span>
+                <span class="marquee-text">Schiacciato alla perfezione • Formaggio fondente • Pane artigianale tostato •</span>
+                <span class="marquee-text">Schiacciato alla perfezione • Formaggio fondente • Pane artigianale tostato •</span>
+            </div>
+        </div>
+
+        <!-- The Story / The Smash Method -->
+        <section id="story" class="story section">
+            <div class="container story-container">
+                <div class="story-text reveal fade-up">
+                    <h2 class="section-title">PERCHÈ <span class="text-accent">SMASH</span>?</h2>
+                    <p class="section-desc">Il segreto sta nella tecnica. Schiacciando la carne sulla piastra rovente inneschiamo la reazione di Maillard, creando una crosticina caramellata e irresistibile, mantenendo tutti i succhi all'interno.</p>
+                    <ul class="features-list">
+                        <li>
+                            <div class="feature-icon">🔥</div>
+                            <div>
+                                <h3>Cottura ad Alta Temperatura</h3>
+                                <p>Crosticina perfetta in pochi secondi.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">🥩</div>
+                            <div>
+                                <h3>Carne Selezionata</h3>
+                                <p>Solo tagli premium macinati freschi ogni giorno.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">🍞</div>
+                            <div>
+                                <h3>Bun Artigianale</h3>
+                                <p>Soffice pan brioche tostato nel burro.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="story-visual reveal fade-up delay-1">
+                    <div class="visual-card bg-yellow">
+                        <h3>Qualità Premium</h3>
+                        <p>Nessun compromesso. Solo ingredienti di prima scelta per il burger definitivo.</p>
+                    </div>
+                    <div class="visual-card bg-red">
+                        <h3>Sapore Esplosivo</h3>
+                        <p>Il perfetto bilanciamento tra dolce, salato, croccante e morbido.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu section bg-dark text-light">
+            <div class="container">
+                <div class="menu-header reveal fade-up">
+                    <h2 class="section-title text-light">IL NOSTRO <span class="text-accent-yellow">MENU</span></h2>
+                    <p class="section-desc">Pochi prodotti, fatti alla perfezione. Qualità senza compromessi.</p>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Menu Item 1 -->
+                    <article class="menu-card reveal fade-up">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/hero_burger.png" alt="Classic Double Smash" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Classic Double Smash</h3>
+                                <span class="card-price">€11.90</span>
+                            </div>
+                            <p class="card-desc">Due patty da 90g, doppio cheddar fuso, cetriolini, cipolla rossa e la nostra salsa segreta Smash King.</p>
+                        </div>
+                    </article>
+
+                    <!-- Menu Item 2 -->
+                    <article class="menu-card reveal fade-up delay-1">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/crispy_fries.png" alt="Crispy Fries" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Golden Crispy Fries</h3>
+                                <span class="card-price">€4.50</span>
+                            </div>
+                            <p class="card-desc">Patatine fritte tagliate a mano, dorate e croccanti, condite con il nostro mix speciale di sale e spezie.</p>
+                        </div>
+                    </article>
+
+                    <!-- Menu Item 3 -->
+                    <article class="menu-card reveal fade-up delay-2">
+                        <div class="card-img-wrapper">
+                            <img src="assets/images/milkshake.png" alt="Premium Vanilla Shake" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="card-title">Premium Vanilla Shake</h3>
+                                <span class="card-price">€5.90</span>
+                            </div>
+                            <p class="card-desc">Frullato denso con vero gelato alla vaniglia del Madagascar, panna montata fresca e ciliegina candita.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    <!-- Contatti & Prenotazioni -->
+    <section id="prenota" class="section booking-section">
+        <div class="container booking-container">
+            <div class="booking-info reveal fade-up">
+                <h2 class="section-title">VIENI A <span class="text-accent">TROVARCI</span></h2>
+                <p class="section-desc">Siamo aperti tutti i giorni. Passa a trovarci o chiamaci per prenotare un tavolo o ordinare da asporto.</p>
+                
+                <div class="contact-details">
+                    <div class="detail-box">
+                        <h3>📍 Dove Siamo</h3>
+                        <p>Via Roma 123, 20100 Milano (MI)</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>🕒 Orari</h3>
+                        <p>Lun-Dom: 12:00 - 15:00 / 19:00 - 23:30</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3>📞 Contatti</h3>
+                        <p>Per asporto e prenotazioni:</p>
+                        <a href="tel:+39021234567" class="phone-link">+39 02 1234 567</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="booking-map reveal fade-up delay-1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.118228589139!2d9.187315515564883!3d45.46736237910086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6af70104cb5%3A0x95e263c95cbf65e4!2sPiazza%20del%20Duomo%2C%20Milano%20MI!5e0!3m2!1sit!2sit!4v1622634882570!5m2!1sit!2sit" width="100%" height="350" style="border:0; border-radius: 12px; box-shadow: 8px 8px 0px var(--color-red);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">SMASH <span>KING</span></a>
+                <p>The real smash experience. Dal 2026, ridefiniamo lo standard del fast food premium.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="TikTok">TK</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Esplora</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">La Nostra Storia</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Unisciti al Club</h4>
+                <p>Iscriviti per ricevere sconti esclusivi e novità segrete.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="La tua email..." required>
+                    <button type="submit" class="btn btn-primary">→</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Smash King. Tutti i diritti riservati.</p>
+            <p>Made with 🔥 in Italy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

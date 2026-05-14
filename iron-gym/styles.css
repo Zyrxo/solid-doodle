@@ -1,0 +1,420 @@
+/* Reset e Variabili */
+:root {
+    --bg-dark: #09090b;
+    --bg-panel: #18181b;
+    --text-main: #f4f4f5;
+    --text-muted: #a1a1aa;
+    
+    /* Cyberpunk / Neon Green */
+    --neon-green: #39ff14;
+    --neon-glow: rgba(57, 255, 20, 0.4);
+    
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+}
+
+/* Typography */
+h1, h2, h3, .logo {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+p {
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0; width: 100%;
+    padding: 1.5rem 0;
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.navbar.scrolled {
+    background: rgba(9, 9, 11, 0.95);
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(57, 255, 20, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--neon-green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--neon-green);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.btn-neon {
+    background-color: var(--neon-green);
+    color: #000;
+    box-shadow: 0 0 15px var(--neon-glow);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.btn-neon:hover {
+    background-color: #fff;
+    box-shadow: 0 0 30px var(--neon-glow);
+    transform: scale(1.05);
+}
+
+.btn-huge {
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+
+.btn-outline:hover {
+    background: var(--neon-green);
+    color: #000;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg-container {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transform: scale(1.05); /* Per effetto parallax JS */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(90deg, rgba(9,9,11,0.9) 0%, rgba(9,9,11,0.4) 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.glitch-text {
+    font-size: clamp(4rem, 8vw, 7rem);
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 4px 4px 0px var(--neon-green);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+    color: #d4d4d8;
+}
+
+/* Skewed Sections Magic */
+.skew-section {
+    padding: 120px 0;
+    transform: skewY(-3deg);
+    margin: -30px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.skew-unskew {
+    transform: skewY(3deg);
+}
+
+/* Corsi */
+.courses-section {
+    background-color: var(--bg-panel);
+    border-top: 3px solid var(--neon-green);
+    border-bottom: 3px solid var(--neon-green);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    color: #fff;
+}
+
+.section-header p {
+    color: var(--neon-green);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+    group: hover;
+    transition: var(--transition);
+}
+
+.course-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; width: 100%; height: 4px;
+    background: var(--neon-green);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.course-card:hover::after {
+    transform: scaleX(1);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.course-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) contrast(120%);
+    transition: var(--transition);
+}
+
+.course-card:hover .course-img {
+    filter: grayscale(0%) contrast(100%);
+}
+
+.course-content {
+    padding: 2rem;
+}
+
+.course-content h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+/* Banner */
+.banner-section {
+    padding: 100px 0;
+    background: var(--bg-dark);
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-panel);
+    padding: 4rem;
+    border-left: 5px solid var(--neon-green);
+}
+
+/* Trial / Lead Gen */
+.trial-section {
+    background-image: linear-gradient(rgba(9,9,11,0.9), rgba(9,9,11,0.9)), url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1920&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.trial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.trial-info h2 {
+    text-shadow: 2px 2px 0px var(--neon-green);
+}
+
+.benefits-list {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.benefits-list li {
+    font-size: 1.2rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.benefits-list span {
+    color: var(--neon-green);
+}
+
+.trial-form-box {
+    background: rgba(24, 24, 27, 0.95);
+    padding: 3rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.lead-form input[type="text"],
+.lead-form input[type="email"],
+.lead-form input[type="tel"] {
+    width: 100%;
+    padding: 1.2rem;
+    background: var(--bg-dark);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.lead-form input:focus {
+    outline: none;
+    border-color: var(--neon-green);
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+.checkbox-group label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.success-msg {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.success-msg h3 {
+    color: var(--neon-green);
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .trial-container, .banner-container {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links, .nav-btn { display: none; }
+    .hero { text-align: center; }
+    .glitch-text { font-size: 3.5rem; text-shadow: 2px 2px 0px var(--neon-green); }
+    .hero-subtitle { margin: 0 auto 2rem; }
+}

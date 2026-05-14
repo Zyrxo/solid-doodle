@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRON GYM | Non ci sono scuse.</title>
+    <meta name="description" content="La palestra per chi fa sul serio. Richiedi subito 7 giorni di prova gratuita.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">IRON<span>GYM</span></a>
+            <ul class="nav-links">
+                <li><a href="#corsi">I Corsi</a></li>
+                <li><a href="#struttura">La Struttura</a></li>
+            </ul>
+            <a href="#trial" class="btn btn-neon nav-btn">7 Giorni Gratis</a>
+            <div class="mobile-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-container">
+            <div class="hero-overlay"></div>
+            <img src="../.gemini/antigravity/artifacts/gym_hero.jpg" alt="Gym Interior" class="hero-bg" onerror="this.src='https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80'">
+        </div>
+        <div class="container hero-content">
+            <h1 class="glitch-text" data-text="SUPERA I TUOI LIMITI">SUPERA I TUOI LIMITI</h1>
+            <p class="hero-subtitle">Più forte, più veloce, inarrestabile. Unisciti all'élite e trasforma la tua debolezza nella tua arma migliore.</p>
+            <div class="hero-cta">
+                <a href="#trial" class="btn btn-neon btn-huge">INIZIA LA PROVA GRATUITA</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Corsi Section (Skewed) -->
+    <section id="corsi" class="courses-section skew-section">
+        <div class="skew-unskew">
+            <div class="container">
+                <div class="section-header">
+                    <h2>I NOSTRI CORSI</h2>
+                    <p>Scegli la tua battaglia.</p>
+                </div>
+                
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="course-content">
+                            <h3>STRENGTH & CONDITIONING</h3>
+                            <p>Forza bruta ed esplosività. Bilancieri pesanti e sudore.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="course-content">
+                            <h3>FUNCTIONAL H.I.I.T.</h3>
+                            <p>Alta intensità per bruciare grasso e costruire resistenza polmonare.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-img" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80');"></div>
+                        <div class="course-content">
+                            <h3>OPEN GYM</h3>
+                            <p>Accesso libero alla sala pesi con attrezzature Eleiko da competizione.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trial Banner -->
+    <section class="banner-section">
+        <div class="container banner-container">
+            <div class="banner-text">
+                <h2>SEI PRONTO A CAMBIARE?</h2>
+                <p>Nessun costo di iscrizione nascosto. Nessun vincolo annuale.</p>
+            </div>
+            <a href="#trial" class="btn btn-outline">SCOPRI LE TARIFFE</a>
+        </div>
+    </section>
+
+    <!-- Lead Gen / Form Section (Skewed) -->
+    <section id="trial" class="trial-section skew-section">
+        <div class="skew-unskew">
+            <div class="container trial-container">
+                <div class="trial-info">
+                    <h2>RICHIEDI IL TUO PASS DA 7 GIORNI.</h2>
+                    <p>Compila il modulo per attivare subito il tuo abbonamento di prova. Avrai accesso a tutti i corsi e alla sala pesi. Nessuna carta di credito richiesta.</p>
+                    <ul class="benefits-list">
+                        <li><span>✔</span> Valutazione iniziale gratuita</li>
+                        <li><span>✔</span> Accesso 24/7 con app</li>
+                        <li><span>✔</span> Docce e saune incluse</li>
+                    </ul>
+                </div>
+                
+                <div class="trial-form-box">
+                    <form class="lead-form" onsubmit="event.preventDefault(); this.innerHTML='<div class=\'success-msg\'><h3>PASS ATTIVATO! 🟩</h3><p>Controlla la tua email per il QR code di accesso.</p></div>';">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" placeholder="Cellulare" required>
+                        </div>
+                        <div class="input-group checkbox-group">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">Accetto i termini e condizioni per la prova gratuita.</label>
+                        </div>
+                        <button type="submit" class="btn btn-neon btn-block">ATTIVA PASS ORA</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">IRON<span>GYM</span></div>
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Iron Gym. Realizzato da Tuo Brand Web Design.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
