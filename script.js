@@ -3,6 +3,11 @@ import('https://esm.sh/@vercel/speed-insights').then(({ injectSpeedInsights }) =
     injectSpeedInsights();
 });
 
+// Vercel Analytics
+import('https://esm.sh/@vercel/analytics').then(({ inject }) => {
+    inject();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Navbar Scroll Effect
