@@ -1,5 +1,5 @@
-/* ============================================
-   RANZATO SERVIZI — OBSIDIAN PREMIUM DESIGN
+﻿/* ============================================
+   RANZATO SERVIZI â€” OBSIDIAN PREMIUM DESIGN
    ============================================ */
 
 /* ===== DESIGN SYSTEM ===== */
@@ -716,58 +716,41 @@ section {
     transform: translateY(-6px);
 }
 
-/* Card Preview (gradient area) */
+/* Card Preview (cinematic image) */
 .card-preview {
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 320px;
     overflow: hidden;
 }
 
 .portfolio-card.featured .card-preview {
-    height: 260px;
+    height: 420px;
 }
 
-.card-browser-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 32px;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-    gap: 6px;
-    z-index: 2;
-}
-
-.browser-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.browser-dot:first-child { background: #ff5f57; }
-.browser-dot:nth-child(2) { background: #ffbd2e; }
-.browser-dot:nth-child(3) { background: #28ca41; }
-
-.card-gradient {
+.card-image {
     width: 100%;
     height: 100%;
-    transition: transform 0.6s var(--ease-out);
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.portfolio-card:hover .card-gradient {
-    transform: scale(1.08);
+.portfolio-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10, 10, 20, 1) 0%, rgba(10, 10, 20, 0.6) 50%, rgba(10, 10, 20, 0) 100%);
+    z-index: 1;
 }
 
 .category-badge {
     position: absolute;
-    bottom: 14px;
-    left: 14px;
+    top: 20px;
+    left: 20px;
+    bottom: auto;
     background: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(12px);
     padding: 0.45rem 1rem;
@@ -1161,7 +1144,7 @@ section {
     font-size: 0.85rem;
 }
 
-/* ===== ANIMATIONS — Scroll Reveal ===== */
+/* ===== ANIMATIONS â€” Scroll Reveal ===== */
 .reveal {
     opacity: 0;
     transform: translateY(35px);
