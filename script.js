@@ -210,20 +210,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // ===== 8. CONTACT FORM HANDLING =====
+    // ===== 8. CONTACT FORM HANDLING (FORMSPREE) =====
     const contactForm = document.getElementById('contactForm');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const statusDiv = document.getElementById('form-status');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<span class="btn-text">Invio in corso...</span>';
+            submitBtn.disabled = true;
+            statusDiv.style.display = 'none';
 
-            const formContainer = contactForm.parentElement;
-            formContainer.innerHTML = `
-                <div class="success-message">
-                    <h3>🚀 Richiesta inviata!</h3>
-                    <p>Ti contatterò nelle prossime 24 ore per la tua bozza gratuita.</p>
-                </div>
-            `;
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    const formContainer = contactForm.parentElement;
+                    formContainer.innerHTML = `
+                        <div class="success-message">
+                            <h3>🚀 Richiesta inviata!</h3>
+                            <p>Ti contatterò nelle prossime 24 ore per la tua bozza gratuita.</p>
+                        </div>
+                    `;
+                } else {
+                    statusDiv.innerHTML = "Ops! C'è stato un problema. Riprova più tardi.";
+                    statusDiv.style.display = 'block';
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                statusDiv.innerHTML = "Ops! Errore di connessione. Riprova più tardi.";
+                statusDiv.style.display = 'block';
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
         });
     }
 
