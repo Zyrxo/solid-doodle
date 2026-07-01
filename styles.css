@@ -1,4 +1,4 @@
-﻿/* ============================================
+/* ============================================
    RANZATO SERVIZI â€” OBSIDIAN PREMIUM DESIGN
    ============================================ */
 
@@ -1108,40 +1108,112 @@ section {
 
 /* ===== FOOTER ===== */
 .footer {
-    padding: 3rem 0;
+    padding: 4rem 0 3rem;
     background: var(--bg-deep);
     border-top: 1px solid var(--border-subtle);
 }
 
-.footer-container {
-    text-align: center;
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
-.footer-top {
-    margin-bottom: 1.5rem;
+.footer-brand {
+    max-width: 300px;
 }
 
 .footer-logo {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
 }
 
 .footer-tagline {
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.footer-contact h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.footer-contact p {
+    color: var(--text-secondary);
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.footer-link {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.footer-link:hover {
+    color: white;
 }
 
 .footer-divider {
-    width: 60px;
-    height: 2px;
-    background: var(--gradient-primary);
-    margin: 1.5rem auto;
-    border-radius: 1px;
+    width: 100%;
+    height: 1px;
+    background: var(--border-subtle);
+    margin: 2rem 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .footer-bottom p {
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+}
+
+.footer-legal {
+    font-size: 0.9rem;
+}
+
+.legal-sep {
+    color: var(--border-subtle);
+    margin: 0 0.75rem;
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.whatsapp-float svg {
+    width: 35px;
+    height: 35px;
 }
 
 /* ===== ANIMATIONS â€” Scroll Reveal ===== */
